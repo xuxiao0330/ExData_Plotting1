@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #reading table
 dt <- read.table("household_power_consumption.txt",sep=";",header = TRUE,stringsAsFactors=FALSE)
 #making date format
@@ -8,6 +9,8 @@ dt1 <- subset(dt,dt$Date == "2007-02-01"|dt$Date =="2007-02-02")
 dt1$Time <- strptime(paste(dt1$Date,dt1$Time),format = "%Y-%m-%d %H:%M:%S")
 #Setting numeric of Global Active Power
 dt1$Global_active_power<- as.numeric(dt1$Global_active_power)
+=======
+>>>>>>> 7c8068dd48de047865a611ece77a170407548347
 #Plot 3
 png("plot3.png",height = 480, width = 480)
 #Plot SM1
