@@ -1,5 +1,3 @@
-#setting working directory 
-setwd("~/datafiles")
 #reading table
 dt <- read.table("household_power_consumption.txt",sep=";",header = TRUE,stringsAsFactors=FALSE)
 #making date format
